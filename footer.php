@@ -1,5 +1,5 @@
     <footer id="foot">
-        <p>&copy; 2015 Theme <a href="https://github.com/Garwih/wordpress-theme-cyan" rel="nofollow" target="_blank">Cyan</a>, Design by <a href="https://timeting.com">Garwi</a>.<br>Powered by <a href="http://wordpress.org/" rel="nofollow" target="_blank">Wordpress</a><p>
+        <p>&copy; 2015 Theme <a href="https://github.com/Garwih/wordpress-theme-cyan" rel="nofollow" target="_blank">Cyan</a>, Design by <a href="https://timeting.com">Garwi</a>.<br>Powered by <a href="http://wordpress.org/" rel="nofollow" target="_blank">Wordpress</a></p>
     </footer>
   </div>
 <?php wp_footer(); ?>

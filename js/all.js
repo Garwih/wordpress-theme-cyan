@@ -31,9 +31,11 @@ function grin(tag) {
     }
 }
 
-$(function() {
-    $(".main-nav-menu").click(function(){
-        $(this).toggleClass("main-nav-menu-h");
-        $(".main-nav").slideToggle();
-    })
-})
+(function($){
+    $(function() {
+        $(".main-nav-menu").click(function(){
+            $(this).toggleClass("main-nav-menu-h");
+            $(".main-nav").slideToggle();
+        });
+    });
+})(jQuery);
