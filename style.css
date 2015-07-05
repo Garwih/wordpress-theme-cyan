@@ -663,12 +663,36 @@ img,iframe{
 }
 
 @media(max-width: 414px){
-    .post-content{
+    .post-title {
+        font-size: 1.8em;
+    }
+
+    .post-content {
         font-size: 1.2em;
+    }
+
+    .post-content h2 {
+        font-size: 1.4em;
     }
 
     .post-content blockquote{
         padding: 10px 4%;
+    }
+
+    .comment {
+        margin-bottom: 15px;
+    }
+
+    .comment-main {
+        margin-bottom: 10px;
+    }
+
+    .comment-sub {
+        margin-bottom: 10px;
+    }
+
+    .children {
+        margin-left: 45px;
     }
 
     .comment-form-author,
