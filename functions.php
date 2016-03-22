@@ -92,7 +92,13 @@ add_theme_support( 'post-formats', array( 'aside','link','image','status','video
 
 // 评论 [img] 标签显示为图片 
 function embed_images($content) {
-  $content = preg_replace('/\[img=?\]*(.*?)(\[\/img)?\]/e', '"<img src=\"$1\" alt=\"" . basename("$1") . "\" />"', $content);
+  $content = preg_replace_callback(
+      '/\[img=?\]*(.*?)(\[\/img)?\]/',
+      function($m) {
+        return "<img src=\"$m[1]\" alt=\"" . basename("$m[1]") . "\" />";
+      },
+      $content
+  );
   return $content;
 }
 add_filter('comment_text', 'embed_images');
